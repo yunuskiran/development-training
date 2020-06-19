@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gits\\development-training\\c#\\Rx\\basic\\RxExtensionBasics\\RxExtensionBasics.csproj": {}
+    "D:\\gits\\development-training\\c#\\Rx\\RxExtensionBasics\\RxExtensionBasics.csproj": {}
   },
   "projects": {
-    "D:\\gits\\development-training\\c#\\Rx\\basic\\RxExtensionBasics\\RxExtensionBasics.csproj": {
+    "D:\\gits\\development-training\\c#\\Rx\\RxExtensionBasics\\RxExtensionBasics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gits\\development-training\\c#\\Rx\\basic\\RxExtensionBasics\\RxExtensionBasics.csproj",
+        "projectUniqueName": "D:\\gits\\development-training\\c#\\Rx\\RxExtensionBasics\\RxExtensionBasics.csproj",
         "projectName": "RxExtensionBasics",
-        "projectPath": "D:\\gits\\development-training\\c#\\Rx\\basic\\RxExtensionBasics\\RxExtensionBasics.csproj",
+        "projectPath": "D:\\gits\\development-training\\c#\\Rx\\RxExtensionBasics\\RxExtensionBasics.csproj",
         "packagesPath": "C:\\Users\\TCYKIRAN\\.nuget\\packages\\",
-        "outputPath": "D:\\gits\\development-training\\c#\\Rx\\basic\\RxExtensionBasics\\obj\\",
+        "outputPath": "D:\\gits\\development-training\\c#\\Rx\\RxExtensionBasics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +40,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

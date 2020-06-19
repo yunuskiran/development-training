@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oezgOgu/w1wESQ141NzoaY471taPkbSrz/B3A1obGr0rHZXNWRQNPwZvHB/JpzIQ+S7yTJBRk4CpkHlHF4jt7A==",
+  "dgSpecHash": "9e0RYvN2sZ4aTQs9T40vTUKioPxUGvXETfb7bi+v7dLrSGGvcCuByvmwYWl74XWwruRGWz+hmloc/moQqFqmmQ==",
   "success": true,
-  "projectFilePath": "D:\\gits\\development-training\\c#\\Rx\\basic\\RxExtensionBasics\\RxExtensionBasics.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\gits\\development-training\\c#\\Rx\\RxExtensionBasics\\RxExtensionBasics.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TCYKIRAN\\.nuget\\packages\\system.reactive\\4.4.1\\system.reactive.4.4.1.nupkg.sha512"
+  ],
   "logs": []
 }

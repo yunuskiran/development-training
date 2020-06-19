@@ -1,11 +1,53 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "System.Reactive/4.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.0/System.Reactive.targets": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "System.Reactive/4.4.1": {
+      "sha512": "iSTPeWR9HJhGoNV4WhVlvofuiTjpok1i4E3LPgMdbMqf3jKhFlT9HAlO32lb52NLppWC/4dZQFfUzTytvyXBmw==",
+      "type": "package",
+      "path": "system.reactive/4.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netcoreapp3.0/System.Reactive.dll",
+        "build/netcoreapp3.0/System.Reactive.targets",
+        "build/netcoreapp3.0/System.Reactive.xml",
+        "buildTransitive/netcoreapp3.0/System.Reactive.targets",
+        "lib/net46/System.Reactive.dll",
+        "lib/net46/System.Reactive.xml",
+        "lib/netcoreapp3.0/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "lib/uap10.0/System.Reactive.dll",
+        "lib/uap10.0/System.Reactive.pri",
+        "lib/uap10.0/System.Reactive.xml",
+        "system.reactive.4.4.1.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "System.Reactive >= 4.4.1"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\TCYKIRAN\\.nuget\\packages\\": {},
@@ -14,11 +56,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gits\\development-training\\c#\\Rx\\basic\\RxExtensionBasics\\RxExtensionBasics.csproj",
+      "projectUniqueName": "D:\\gits\\development-training\\c#\\Rx\\RxExtensionBasics\\RxExtensionBasics.csproj",
       "projectName": "RxExtensionBasics",
-      "projectPath": "D:\\gits\\development-training\\c#\\Rx\\basic\\RxExtensionBasics\\RxExtensionBasics.csproj",
+      "projectPath": "D:\\gits\\development-training\\c#\\Rx\\RxExtensionBasics\\RxExtensionBasics.csproj",
       "packagesPath": "C:\\Users\\TCYKIRAN\\.nuget\\packages\\",
-      "outputPath": "D:\\gits\\development-training\\c#\\Rx\\basic\\RxExtensionBasics\\obj\\",
+      "outputPath": "D:\\gits\\development-training\\c#\\Rx\\RxExtensionBasics\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -47,6 +89,12 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "System.Reactive": {
+            "target": "Package",
+            "version": "[4.4.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

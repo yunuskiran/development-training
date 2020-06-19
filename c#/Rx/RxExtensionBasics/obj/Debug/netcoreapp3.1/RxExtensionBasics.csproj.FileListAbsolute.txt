@@ -1,0 +1,16 @@
+D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\RxExtensionBasics.exe
+D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\RxExtensionBasics.deps.json
+D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\RxExtensionBasics.runtimeconfig.json
+D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\RxExtensionBasics.runtimeconfig.dev.json
+D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\RxExtensionBasics.dll
+D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\RxExtensionBasics.pdb
+D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.csprojAssemblyReference.cache
+D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.AssemblyInfoInputs.cache
+D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.AssemblyInfo.cs
+D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.dll
+D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.pdb
+D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.genruntimeconfig.cache
+D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\System.Reactive.dll
+D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\System.Reactive.xml
+D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.csproj.CoreCompileInputs.cache
+D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.csproj.CopyComplete
