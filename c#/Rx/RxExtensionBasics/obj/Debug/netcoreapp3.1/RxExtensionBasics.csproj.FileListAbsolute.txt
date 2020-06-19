@@ -12,5 +12,4 @@ D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxE
 D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.genruntimeconfig.cache
 D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\System.Reactive.dll
 D:\gits\development-training\c#\Rx\RxExtensionBasics\bin\Debug\netcoreapp3.1\System.Reactive.xml
-D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.csproj.CoreCompileInputs.cache
 D:\gits\development-training\c#\Rx\RxExtensionBasics\obj\Debug\netcoreapp3.1\RxExtensionBasics.csproj.CopyComplete
