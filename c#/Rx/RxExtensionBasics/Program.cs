@@ -12,7 +12,8 @@ namespace RxExtensionBasics
             // WithoutRxExtension();
             // WithLambda();
             // WithExtension();
-            WithReplaySubject();
+            // WithReplaySubject();
+            WithBehaviourSubject();
             Console.ReadKey();
         }
 
@@ -63,6 +64,14 @@ namespace RxExtensionBasics
             market.OnNext(3);
             market.OnNext(4);
             market.Subscribe(_ => Console.WriteLine($"Value:{_}"));
+        }
+
+        static void WithBehaviourSubject()
+        {
+            var market = new BehaviorSubject<float>(1);
+            market.Inspect("market");
+            market.OnNext(2);
+            market.OnCompleted();
         }
     }
 }
