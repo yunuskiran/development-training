@@ -13,7 +13,8 @@ namespace RxExtensionBasics
             // WithLambda();
             // WithExtension();
             // WithReplaySubject();
-            WithBehaviourSubject();
+            // WithBehaviourSubject();
+             WithAsyncSubject();
             Console.ReadKey();
         }
 
@@ -71,6 +72,16 @@ namespace RxExtensionBasics
             var market = new BehaviorSubject<float>(1);
             market.Inspect("market");
             market.OnNext(2);
+            market.OnCompleted();
+        }
+
+        static void WithAsyncSubject()
+        {
+            var market = new AsyncSubject<float>();
+            market.Inspect("market");
+            market.OnNext(1);
+            market.OnNext(2);
+            market.OnNext(3);
             market.OnCompleted();
         }
     }
