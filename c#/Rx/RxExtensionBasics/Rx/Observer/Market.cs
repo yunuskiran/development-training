@@ -1,8 +1,7 @@
 using System;
-using System.Reactive.Disposables;
 using System.Reactive.Subjects;
 
-namespace RxExtensionBasics
+namespace RxExtensionBasics.Rx
 {
     public partial class Market
         : IObserver<float>

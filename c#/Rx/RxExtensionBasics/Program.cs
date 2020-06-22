@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Reactive.Subjects;
 using System.Reactive.Linq;
+using RxExtensionBasics.Rx;
+using System.Threading;
+using System.Timers;
+using Timer = System.Timers.Timer;
+using System.Reactive.Disposables;
 
 namespace RxExtensionBasics
 {
@@ -14,13 +19,19 @@ namespace RxExtensionBasics
             // WithExtension();
             // WithReplaySubject();
             // WithBehaviourSubject();
-             WithAsyncSubject();
+            // WithAsyncSubject();
+            // WithObservable();
+            // Factories();
+            // Blocking();
+            // NonBlocking();
+            OperatorsReturn();
+
             Console.ReadKey();
         }
 
         static void WithoutRxExtension()
         {
-            var market = new Market();
+            var market = new Design.Market();
             market.AddPrice += (sender, f) =>
             {
                 Console.WriteLine($"Added price {f}");
@@ -84,5 +95,53 @@ namespace RxExtensionBasics
             market.OnNext(3);
             market.OnCompleted();
         }
+
+        static void WithObservable()
+        {
+            var market = new Market();
+            var subscription = market.Inspect("market");
+            market.Publish(123);
+            subscription.Dispose();
+        }
+
+        static void Factories()
+        {
+            var observableReturn = Observable.Return(1); //Return 1;
+            observableReturn.Inspect("Return");
+            var observableEmpty = Observable.Empty<int>(); //Return Empty;
+            observableEmpty.Inspect("ReturnEmpty");
+            var observableNever = Observable.Never<int>(); //Never return;
+            observableNever.Inspect("ReturnNever");
+            var observableException = Observable.Throw<int>(new Exception("error")); //Throw Exception;
+            observableException.Inspect("Exception");
+        }
+
+        static void Blocking()
+        {
+            Create.Blocking().Inspect("Blocking");
+        }
+
+        static void NonBlocking()
+        {
+            Create.NonBlocking().Inspect("NonBlocking");
+        }
+
+        static void OperatorsReturn()
+        {
+            var observable = Observable.Create<string>(_ =>
+            {
+                var timer = new Timer(1000);
+                timer.Elapsed += (sender, e) => _.OnNext($"tick {e.SignalTime}");
+                timer.Elapsed += Timer_Elapsed;
+                timer.Start();
+                return Disposable.Empty;
+            });
+
+            var subscriber = observable.Inspect("timer");
+            Console.ReadKey();
+        }
+
+        private static void Timer_Elapsed(object sender, ElapsedEventArgs e)
+            => Console.WriteLine($"tock {e.SignalTime}");
     }
 }

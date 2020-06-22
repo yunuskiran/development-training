@@ -1,9 +1,9 @@
-namespace RxExtensionBasics
-{
-    using System.Collections.Generic;
-    using System;
+using System.Collections.Generic;
+using System;
 
-    public partial class Market
+namespace RxExtensionBasics.Design
+{
+    public class Market
     {
         private List<float> prices = new List<float>();
 
