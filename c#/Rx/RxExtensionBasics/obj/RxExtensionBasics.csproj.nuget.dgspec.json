@@ -41,6 +41,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[1.4.4, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
             "System.Reactive": {
               "target": "Package",
               "version": "[4.4.1, )"
